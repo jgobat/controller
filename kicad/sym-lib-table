@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name floatController-legacy)(type Legacy)(uri ${KIPRJMOD}/floatController-legacy.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/power.lib)(options "")(descr ""))
+  (lib (name Interface_UART)(type Legacy)(uri ${KIPRJMOD}/Interface_UART.lib)(options "")(descr ""))
+  (lib (name Interface)(type Legacy)(uri ${KIPRJMOD}/Interface.lib)(options "")(descr ""))
+)

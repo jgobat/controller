@@ -1,0 +1,1288 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_Motor:DRV8870DDA U13
+U 1 1 5EC5F934
+P 2300 1350
+F 0 "U13" H 2100 1600 50  0000 C CNN
+F 1 "TB67H451FNG" H 2600 1600 50  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 2400 1250 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=68598&prodName=TB67H451FNG" H 2050 1700 50  0001 C CNN
+F 4 "264-TB67H451FNGELCT-ND" H 2300 1350 50  0001 C CNN "Digikey"
+F 5 "3A, pin compatible with DRV8870 with lower (1uA vs 10uA) quiescent" H 2300 1350 50  0001 C CNN "Rating"
+F 6 "TB67H451FNG,EL" H 2300 1350 50  0001 C CNN "Manufacturer pn"
+	1    2300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1050 2300 900 
+Wire Wire Line
+	2300 1750 2300 1950
+$Comp
+L power:GND #PWR0134
+U 1 1 5EC6B2AA
+P 2300 2100
+F 0 "#PWR0134" H 2300 1850 50  0001 C CNN
+F 1 "GND" H 2305 1927 50  0000 C CNN
+F 2 "" H 2300 2100 50  0001 C CNN
+F 3 "" H 2300 2100 50  0001 C CNN
+	1    2300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0135
+U 1 1 5EC6B6B2
+P 2300 900
+F 0 "#PWR0135" H 2300 750 50  0001 C CNN
+F 1 "+BATT" H 2315 1073 50  0000 C CNN
+F 2 "" H 2300 900 50  0001 C CNN
+F 3 "" H 2300 900 50  0001 C CNN
+	1    2300 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1350 1750 1350
+Wire Wire Line
+	1150 1550 1900 1550
+Text GLabel 1150 1250 0    50   Input ~ 0
+ACT1CTLA
+Text GLabel 1150 1350 0    50   Input ~ 0
+ACT1CTLB
+Text GLabel 1150 1550 0    50   Input ~ 0
+ACT1VCURR
+Wire Wire Line
+	2700 1550 2850 1550
+Wire Wire Line
+	2850 1550 2850 1600
+$Comp
+L Device:R_US R30
+U 1 1 5EC6C3D0
+P 2850 1750
+F 0 "R30" H 2918 1796 50  0000 L CNN
+F 1 "0.1" H 2918 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 2890 1740 50  0001 C CNN
+F 3 "~" H 2850 1750 50  0001 C CNN
+F 4 "CSRN2512FTR100CT-ND" H 2850 1750 50  0001 C CNN "Digikey"
+F 5 "1%, 2W (4A)" H 2850 1750 50  0001 C CNN "Rating"
+F 6 "CSRN2512FTR100" H 2850 1750 50  0001 C CNN "Manufacturer pn"
+	1    2850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1900 2850 1950
+Wire Wire Line
+	2850 1950 2300 1950
+Connection ~ 2300 1950
+Wire Wire Line
+	2300 1950 2300 2000
+$Comp
+L Driver_Motor:DRV8870DDA U14
+U 1 1 5EC6F079
+P 6250 1400
+F 0 "U14" H 6000 1650 50  0000 C CNN
+F 1 "TB67H451FNG" H 6550 1650 50  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 6350 1300 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=68598&prodName=TB67H451FNG" H 6000 1750 50  0001 C CNN
+F 4 "264-TB67H451FNGELCT-ND" H 6250 1400 50  0001 C CNN "Digikey"
+F 5 "3A, pin compatible with DRV8870 with lower (1uA vs 10uA) quiescent" H 6250 1400 50  0001 C CNN "Rating"
+F 6 "TB67H451FNG,EL" H 6250 1400 50  0001 C CNN "Manufacturer pn"
+	1    6250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1100 6250 1000
+Wire Wire Line
+	6250 1800 6250 1900
+Wire Wire Line
+	5850 1400 5435 1400
+Wire Wire Line
+	5600 1600 5850 1600
+Text GLabel 5090 1300 0    50   Input ~ 0
+ACT2CTLA
+Text GLabel 5090 1400 0    50   Input ~ 0
+ACT2CTLB
+Wire Wire Line
+	6650 1600 6700 1600
+Wire Wire Line
+	6700 1900 6250 1900
+Connection ~ 6250 1900
+Wire Wire Line
+	6250 1900 6250 1970
+Wire Wire Line
+	5600 1600 5600 1050
+Wire Wire Line
+	6700 1600 6700 1900
+$Comp
+L power:+3V3 #PWR0138
+U 1 1 5EC74796
+P 5600 1050
+F 0 "#PWR0138" H 5600 900 50  0001 C CNN
+F 1 "+3V3" H 5615 1223 50  0000 C CNN
+F 2 "" H 5600 1050 50  0001 C CNN
+F 3 "" H 5600 1050 50  0001 C CNN
+	1    5600 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5090 1300 5185 1300
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5ED2CBB7
+P 3600 1250
+F 0 "J10" H 3680 1242 50  0000 L CNN
+F 1 "Molex_KK100_2" H 3680 1151 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3600 1250 50  0001 C CNN
+F 3 "~" H 3600 1250 50  0001 C CNN
+F 4 "WM13450-ND" H 3600 1250 50  0001 C CNN "Digikey"
+F 5 "0022235021" H 3600 1250 50  0001 C CNN "Manufacturer pn"
+	1    3600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J13
+U 1 1 5EE3EBD0
+P 6750 4850
+F 0 "J13" H 6830 4842 50  0000 L CNN
+F 1 "Hirose_DF11_2x2" H 6830 4751 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF11-4DP-2DSA_2x02_P2.00mm_Vertical" H 6750 4850 50  0001 C CNN
+F 3 "~" H 6750 4850 50  0001 C CNN
+F 4 "H122036-ND" H 6750 4850 50  0001 C CNN "Digikey"
+F 5 "DF11-4DP-2DSA(08)" H 6750 4850 50  0001 C CNN "Manufacturer pn"
+	1    6750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4750 6300 4750
+Wire Wire Line
+	6300 4750 6300 4500
+Wire Wire Line
+	6550 5050 6300 5050
+Wire Wire Line
+	6300 5050 6300 5250
+$Comp
+L power:+3V3 #PWR0150
+U 1 1 5EE440C6
+P 6300 4500
+F 0 "#PWR0150" H 6300 4350 50  0001 C CNN
+F 1 "+3V3" H 6315 4673 50  0000 C CNN
+F 2 "" H 6300 4500 50  0001 C CNN
+F 3 "" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0151
+U 1 1 5EE6173C
+P 6300 5250
+F 0 "#PWR0151" H 6300 5000 50  0001 C CNN
+F 1 "GNDA" H 6305 5077 50  0000 C CNN
+F 2 "" H 6300 5250 50  0001 C CNN
+F 3 "" H 6300 5250 50  0001 C CNN
+	1    6300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4850 6300 4850
+Wire Wire Line
+	6550 4950 6300 4950
+Text GLabel 6300 4850 0    50   Output ~ 0
+ACTVFB1
+Text GLabel 6300 4950 0    50   Output ~ 0
+ACTVFB2
+Wire Wire Line
+	10300 5550 10150 5550
+Wire Wire Line
+	10150 5550 10150 5100
+$Comp
+L power:GND #PWR0152
+U 1 1 5EE6F03E
+P 10150 5950
+F 0 "#PWR0152" H 10150 5700 50  0001 C CNN
+F 1 "GND" H 10155 5777 50  0000 C CNN
+F 2 "" H 10150 5950 50  0001 C CNN
+F 3 "" H 10150 5950 50  0001 C CNN
+	1    10150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0153
+U 1 1 5EE6F25C
+P 10150 5100
+F 0 "#PWR0153" H 10150 4950 50  0001 C CNN
+F 1 "+3V3" H 10200 5250 50  0000 C CNN
+F 2 "" H 10150 5100 50  0001 C CNN
+F 3 "" H 10150 5100 50  0001 C CNN
+	1    10150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5650 10050 5650
+Wire Wire Line
+	10300 5850 10150 5850
+Wire Wire Line
+	10150 5850 10150 5950
+Text GLabel 9600 5750 0    50   Output ~ 0
+BUBBLE
+Wire Wire Line
+	10300 5750 9750 5750
+Wire Wire Line
+	9750 5750 9750 5650
+Connection ~ 9750 5750
+Wire Wire Line
+	9750 5750 9600 5750
+$Comp
+L Device:R_US R?
+U 1 1 5EE98CAF
+P 9750 5500
+AR Path="/5EA4EECB/5EE98CAF" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5EE98CAF" Ref="R35"  Part="1" 
+F 0 "R35" H 9800 5550 50  0000 L CNN
+F 1 "TBD" H 9750 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9790 5490 50  0001 C CNN
+F 3 "~" H 9750 5500 50  0001 C CNN
+	1    9750 5500
+	1    0    0    -1  
+$EndComp
+Text Notes 5650 4150 0    50   ~ 0
+analog feedback with 3.3V reference\n
+Text Notes 9650 6250 0    50   ~ 0
+encoder and bubble detector feedback
+Text Notes 500  950  0    50   ~ 0
+actuator 1 H-bridge with constant current \nPWM option. Absolute max 3.5A. 2.5A max\npossible continuous, temperature dependent.
+Text Label 6950 1300 0    50   ~ 0
+OUT2A
+Text Label 6950 1400 0    50   ~ 0
+OUT2B
+Text Label 2750 1250 0    50   ~ 0
+OUT1A
+Text Label 2750 1350 0    50   ~ 0
+OUT1B
+Wire Wire Line
+	2700 1250 3400 1250
+Wire Wire Line
+	2700 1350 3400 1350
+$Comp
+L Device:CP1 C21
+U 1 1 5F1D9351
+P 8650 1450
+F 0 "C21" H 8400 1500 50  0000 L CNN
+F 1 "39u" H 8450 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.9" H 8650 1450 50  0001 C CNN
+F 3 "~" H 8650 1450 50  0001 C CNN
+F 4 "P124997CT-ND" H 8650 1450 50  0001 C CNN "Digikey"
+F 5 "EEH-ZK1V390UR‎" H 8650 1450 50  0001 C CNN "Manufacturer pn"
+	1    8650 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5F1E0E93
+P 9000 1450
+F 0 "C22" H 9115 1496 50  0000 L CNN
+F 1 "0.1u" H 9115 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9038 1300 50  0001 C CNN
+F 3 "~" H 9000 1450 50  0001 C CNN
+F 4 "490-16477-1-ND" H 9000 1450 50  0001 C CNN "Digikey"
+F 5 "GCJ188R71E104KA12D‎" H 9000 1450 50  0001 C CNN "Manufacturer pn"
+	1    9000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1300 8650 1200
+Wire Wire Line
+	8650 1200 8850 1200
+Wire Wire Line
+	9000 1200 9000 1300
+Wire Wire Line
+	8650 1600 8650 1700
+Wire Wire Line
+	8650 1700 8850 1700
+Wire Wire Line
+	9000 1700 9000 1600
+Wire Wire Line
+	8850 1200 8850 1000
+Connection ~ 8850 1200
+Wire Wire Line
+	8850 1200 9000 1200
+Wire Wire Line
+	8850 1700 8850 1850
+Connection ~ 8850 1700
+Wire Wire Line
+	8850 1700 9000 1700
+$Comp
+L power:GND #PWR0161
+U 1 1 5F1F37E6
+P 8850 1850
+F 0 "#PWR0161" H 8850 1600 50  0001 C CNN
+F 1 "GND" H 8855 1677 50  0000 C CNN
+F 2 "" H 8850 1850 50  0001 C CNN
+F 3 "" H 8850 1850 50  0001 C CNN
+	1    8850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0162
+U 1 1 5F1F3C0C
+P 8850 1000
+F 0 "#PWR0162" H 8850 850 50  0001 C CNN
+F 1 "+BATT" H 8865 1173 50  0000 C CNN
+F 2 "" H 8850 1000 50  0001 C CNN
+F 3 "" H 8850 1000 50  0001 C CNN
+	1    8850 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1250 1500 1600
+Connection ~ 1500 1250
+Wire Wire Line
+	1500 1250 1150 1250
+$Comp
+L Device:R_US R?
+U 1 1 5ECA7275
+P 1500 1750
+AR Path="/5EA4EECB/5ECA7275" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5ECA7275" Ref="R18"  Part="1" 
+F 0 "R18" H 1300 1750 50  0000 L CNN
+F 1 "220k" H 1250 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1540 1740 50  0001 C CNN
+F 3 "~" H 1500 1750 50  0001 C CNN
+F 4 "P220KGCT-ND" H 1500 1750 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 1500 1750 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 1500 1750 50  0001 C CNN "Manufacturer pn"
+	1    1500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5ECA9BDB
+P 1750 1750
+AR Path="/5EA4EECB/5ECA9BDB" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5ECA9BDB" Ref="R19"  Part="1" 
+F 0 "R19" H 1818 1796 50  0000 L CNN
+F 1 "220k" H 1818 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1790 1740 50  0001 C CNN
+F 3 "~" H 1750 1750 50  0001 C CNN
+F 4 "P220KGCT-ND" H 1750 1750 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 1750 1750 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 1750 1750 50  0001 C CNN "Manufacturer pn"
+	1    1750 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1900 1500 2000
+Wire Wire Line
+	1500 2000 1750 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	2300 2000 2300 2100
+Wire Wire Line
+	1750 1900 1750 2000
+Connection ~ 1750 2000
+Wire Wire Line
+	1750 2000 2300 2000
+Text Notes 8200 750  0    50   ~ 0
+bulk capacitors for actuator 1 and 2
+Text Notes 2450 2100 0    50   ~ 0
+Iout = 0.1 (fixed gain) * Vref (DAC output volts) / 0.1 (R30)
+Wire Wire Line
+	1500 1250 1900 1250
+Wire Wire Line
+	1750 1600 1750 1350
+Connection ~ 1750 1350
+Wire Wire Line
+	1750 1350 1150 1350
+$Comp
+L Transistor_FET:DMC2053UVT Q12
+U 2 1 5EFC9461
+P 9450 4600
+F 0 "Q12" H 9555 4646 50  0000 L CNN
+F 1 "DMG6601LVT" H 9555 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 9400 4125 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 9350 4600 50  0001 C CNN
+F 4 "‎DMG6601LVT-7DICT-ND‎" H 9450 4600 50  0001 C CNN "Digikey"
+	2    9450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMC2053UVT Q12
+U 1 1 5EFCA151
+P 9450 3850
+F 0 "Q12" V 9692 3850 50  0000 C CNN
+F 1 "DMG6601LVT" V 9601 3850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 9400 3375 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMC2053UVT.pdf" H 9350 3850 50  0001 C CNN
+	1    9450 3850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9450 4400 9450 4350
+Wire Wire Line
+	9250 3850 9050 3850
+Wire Wire Line
+	9050 3850 9050 3350
+$Comp
+L Device:R_US R?
+U 1 1 5F02B76D
+P 9050 4100
+AR Path="/5EA4EECB/5F02B76D" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5F02B76D" Ref="R45"  Part="1" 
+F 0 "R45" H 9118 4146 50  0000 L CNN
+F 1 "220k" H 9118 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9090 4090 50  0001 C CNN
+F 3 "~" H 9050 4100 50  0001 C CNN
+F 4 "P220KGCT-ND" H 9050 4100 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 9050 4100 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 9050 4100 50  0001 C CNN "Manufacturer pn"
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F02C020
+P 9050 4900
+AR Path="/5EA4EECB/5F02C020" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5F02C020" Ref="R46"  Part="1" 
+F 0 "R46" H 9118 4946 50  0000 L CNN
+F 1 "220k" H 9118 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9090 4890 50  0001 C CNN
+F 3 "~" H 9050 4900 50  0001 C CNN
+F 4 "P220KGCT-ND" H 9050 4900 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 9050 4900 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 9050 4900 50  0001 C CNN "Manufacturer pn"
+	1    9050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3950 9050 3850
+Connection ~ 9050 3850
+Wire Wire Line
+	9050 4250 9050 4350
+Wire Wire Line
+	9050 4350 9450 4350
+Connection ~ 9450 4350
+Wire Wire Line
+	9450 4350 9450 4150
+Wire Wire Line
+	9050 4750 9050 4600
+Wire Wire Line
+	9050 4600 9150 4600
+Connection ~ 9050 4600
+Wire Wire Line
+	8800 4600 9050 4600
+Wire Wire Line
+	9050 5050 9050 5100
+Wire Wire Line
+	9050 5100 9450 5100
+Wire Wire Line
+	9450 4800 9450 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5F04EB9F
+P 9450 5200
+AR Path="/5EA4EECB/5F04EB9F" Ref="#PWR?"  Part="1" 
+AR Path="/5EC52B81/5F04EB9F" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 9450 4950 50  0001 C CNN
+F 1 "GND" H 9455 5027 50  0000 C CNN
+F 2 "" H 9450 5200 50  0001 C CNN
+F 3 "" H 9450 5200 50  0001 C CNN
+	1    9450 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 5200 9450 5100
+Connection ~ 9450 5100
+$Comp
+L power:+5V #PWR0154
+U 1 1 5F05BB26
+P 9050 3350
+F 0 "#PWR0154" H 9050 3200 50  0001 C CNN
+F 1 "+5V" H 9000 3500 50  0000 C CNN
+F 2 "" H 9050 3350 50  0001 C CNN
+F 3 "" H 9050 3350 50  0001 C CNN
+	1    9050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3850 10050 5650
+Wire Wire Line
+	9650 3850 10050 3850
+Text GLabel 8800 4600 0    50   Input ~ 0
+BUBBLEPWRCTL
+Text Label 9750 3850 0    50   ~ 0
+ENCODER_V
+$Comp
+L power:GND #PWR0136
+U 1 1 5EC6F085
+P 6250 2000
+F 0 "#PWR0136" H 6250 1750 50  0001 C CNN
+F 1 "GND" H 6255 1827 50  0000 C CNN
+F 2 "" H 6250 2000 50  0001 C CNN
+F 3 "" H 6250 2000 50  0001 C CNN
+	1    6250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1300 7200 1300
+Wire Wire Line
+	6650 1400 7200 1400
+$Comp
+L Driver_Motor:DRV8870DDA U15
+U 1 1 5F0938DF
+P 2300 3150
+F 0 "U15" H 2050 3400 50  0000 C CNN
+F 1 "TB67H451FNG" H 2600 3400 50  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 2400 3050 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=68598&prodName=TB67H451FNG" H 2050 3500 50  0001 C CNN
+F 4 "264-TB67H451FNGELCT-ND" H 2300 3150 50  0001 C CNN "Digikey"
+F 5 "3A, pin compatible with DRV8870 with lower (1uA vs 10uA) quiescent" H 2300 3150 50  0001 C CNN "Rating"
+F 6 "TB67H451FNG,EL" H 2300 3150 50  0001 C CNN "Manufacturer pn"
+	1    2300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2850 2300 2750
+Wire Wire Line
+	2300 3550 2300 3650
+Wire Wire Line
+	1900 3150 1420 3150
+Wire Wire Line
+	1650 3350 1900 3350
+Text GLabel 1005 3050 0    50   Input ~ 0
+ACT3CTLA
+Text GLabel 1005 3150 0    50   Input ~ 0
+ACT3CTLB
+Wire Wire Line
+	2700 3350 2750 3350
+Wire Wire Line
+	2750 3650 2300 3650
+Connection ~ 2300 3650
+Wire Wire Line
+	2300 3650 2300 3700
+Wire Wire Line
+	1650 3350 1650 2800
+Wire Wire Line
+	2750 3350 2750 3650
+$Comp
+L power:+3V3 #PWR0129
+U 1 1 5F0938F7
+P 1650 2800
+F 0 "#PWR0129" H 1650 2650 50  0001 C CNN
+F 1 "+3V3" H 1665 2973 50  0000 C CNN
+F 2 "" H 1650 2800 50  0001 C CNN
+F 3 "" H 1650 2800 50  0001 C CNN
+	1    1650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1005 3050 1170 3050
+Text Label 3000 3050 0    50   ~ 0
+OUT3A
+Text Label 3000 3150 0    50   ~ 0
+OUT3B
+$Comp
+L power:GND #PWR0140
+U 1 1 5F093910
+P 2300 3750
+F 0 "#PWR0140" H 2300 3500 50  0001 C CNN
+F 1 "GND" H 2305 3577 50  0000 C CNN
+F 2 "" H 2300 3750 50  0001 C CNN
+F 3 "" H 2300 3750 50  0001 C CNN
+	1    2300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3050 3950 3050
+Wire Wire Line
+	2700 3150 3950 3150
+$Comp
+L power:+3V3 #PWR0155
+U 1 1 5EEADF11
+P 9750 5300
+F 0 "#PWR0155" H 9750 5150 50  0001 C CNN
+F 1 "+3V3" H 9800 5450 50  0000 C CNN
+F 2 "" H 9750 5300 50  0001 C CNN
+F 3 "" H 9750 5300 50  0001 C CNN
+	1    9750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:DRV8870DDA U16
+U 1 1 5F0C6D67
+P 6300 3100
+F 0 "U16" H 6050 3350 50  0000 C CNN
+F 1 "TB67H451FNG" H 6600 3350 50  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 6400 3000 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=68598&prodName=TB67H451FNG" H 6050 3450 50  0001 C CNN
+F 4 "264-TB67H451FNGELCT-ND" H 6300 3100 50  0001 C CNN "Digikey"
+F 5 "3A, pin compatible with DRV8870 with lower (1uA vs 10uA) quiescent" H 6300 3100 50  0001 C CNN "Rating"
+F 6 "TB67H451FNG,EL" H 6300 3100 50  0001 C CNN "Manufacturer pn"
+	1    6300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2800 6300 2700
+Wire Wire Line
+	6300 3500 6300 3600
+Wire Wire Line
+	5650 3300 5900 3300
+Text GLabel 5245 3000 0    50   Input ~ 0
+ACT4CTLA
+Text GLabel 5245 3100 0    50   Input ~ 0
+ACT4CTLB
+Wire Wire Line
+	6700 3300 6750 3300
+Wire Wire Line
+	6750 3600 6300 3600
+Connection ~ 6300 3600
+Wire Wire Line
+	6300 3600 6300 3670
+Wire Wire Line
+	5650 3300 5650 2750
+Wire Wire Line
+	6750 3300 6750 3600
+$Comp
+L power:+3V3 #PWR0142
+U 1 1 5F0C6D7F
+P 5650 2750
+F 0 "#PWR0142" H 5650 2600 50  0001 C CNN
+F 1 "+3V3" H 5665 2923 50  0000 C CNN
+F 2 "" H 5650 2750 50  0001 C CNN
+F 3 "" H 5650 2750 50  0001 C CNN
+	1    5650 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5245 3000 5350 3000
+Text Label 7000 3000 0    50   ~ 0
+OUT4A
+Text Label 7000 3100 0    50   ~ 0
+OUT4B
+$Comp
+L power:GND #PWR0146
+U 1 1 5F0C6D98
+P 6300 3700
+F 0 "#PWR0146" H 6300 3450 50  0001 C CNN
+F 1 "GND" H 6305 3527 50  0000 C CNN
+F 2 "" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3000 7600 3000
+Wire Wire Line
+	6700 3100 7600 3100
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5F0CE30F
+P 7400 1300
+F 0 "J9" H 7480 1292 50  0000 L CNN
+F 1 "Molex_KK100_2" H 7480 1201 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7400 1300 50  0001 C CNN
+F 3 "~" H 7400 1300 50  0001 C CNN
+F 4 "WM13450-ND" H 7400 1300 50  0001 C CNN "Digikey"
+F 5 "0022235021" H 7400 1300 50  0001 C CNN "Manufacturer pn"
+	1    7400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J12
+U 1 1 5F0E7B61
+P 4150 3050
+F 0 "J12" H 4230 3092 50  0000 L CNN
+F 1 "Molex_KK100_5" H 4230 3001 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 4150 3050 50  0001 C CNN
+F 3 "~" H 4150 3050 50  0001 C CNN
+	1    4150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2950 3700 2950
+Text GLabel 3700 2950 0    50   Output ~ 0
+ACT3FB
+Wire Wire Line
+	3950 2850 3800 2850
+Wire Wire Line
+	3800 2850 3800 3450
+Wire Wire Line
+	3950 3250 3850 3250
+Wire Wire Line
+	3850 3250 3850 2650
+$Comp
+L power:+3V3 #PWR0139
+U 1 1 5F11A955
+P 3850 2650
+F 0 "#PWR0139" H 3850 2500 50  0001 C CNN
+F 1 "+3V3" H 3865 2823 50  0000 C CNN
+F 2 "" H 3850 2650 50  0001 C CNN
+F 3 "" H 3850 2650 50  0001 C CNN
+	1    3850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5F11AFC0
+P 3800 3450
+F 0 "#PWR0143" H 3800 3200 50  0001 C CNN
+F 1 "GND" H 3805 3277 50  0000 C CNN
+F 2 "" H 3800 3450 50  0001 C CNN
+F 3 "" H 3800 3450 50  0001 C CNN
+	1    3800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J11
+U 1 1 5F122397
+P 7800 3100
+F 0 "J11" H 7880 3142 50  0000 L CNN
+F 1 "FPC5" H 7880 3051 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Molex_200528-0050_1x05-1MP_P1.00mm_Horizontal" H 7800 3100 50  0001 C CNN
+F 3 "~" H 7800 3100 50  0001 C CNN
+	1    7800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3200 7500 3200
+Wire Wire Line
+	7500 3200 7500 2650
+Wire Wire Line
+	7600 2900 7400 2900
+Wire Wire Line
+	7400 2900 7400 3450
+Wire Wire Line
+	7600 3300 7250 3300
+Text GLabel 7250 3300 0    50   Output ~ 0
+ACT4FB
+$Comp
+L power:GND #PWR0147
+U 1 1 5F136509
+P 7400 3450
+F 0 "#PWR0147" H 7400 3200 50  0001 C CNN
+F 1 "GND" H 7405 3277 50  0000 C CNN
+F 2 "" H 7400 3450 50  0001 C CNN
+F 3 "" H 7400 3450 50  0001 C CNN
+	1    7400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0148
+U 1 1 5F1367CB
+P 7500 2650
+F 0 "#PWR0148" H 7500 2500 50  0001 C CNN
+F 1 "+3V3" H 7515 2823 50  0000 C CNN
+F 2 "" H 7500 2650 50  0001 C CNN
+F 3 "" H 7500 2650 50  0001 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J14
+U 1 1 5F04D2B0
+P 10500 5650
+F 0 "J14" H 10580 5642 50  0000 L CNN
+F 1 "Hirose_DF11_2x2" H 10350 5350 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF11-4DP-2DSA_2x02_P2.00mm_Vertical" H 10500 5650 50  0001 C CNN
+F 3 "~" H 10500 5650 50  0001 C CNN
+F 4 "H122036-ND" H 10500 5650 50  0001 C CNN "Digikey"
+F 5 "DF11-4DP-2DSA(08)" H 10500 5650 50  0001 C CNN "Manufacturer pn"
+	1    10500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5300 9750 5350
+$Comp
+L power:+12V #PWR0128
+U 1 1 5F075B24
+P 6300 2700
+F 0 "#PWR0128" H 6300 2550 50  0001 C CNN
+F 1 "+12V" H 6315 2873 50  0000 C CNN
+F 2 "" H 6300 2700 50  0001 C CNN
+F 3 "" H 6300 2700 50  0001 C CNN
+	1    6300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0141
+U 1 1 5F076768
+P 2300 2750
+F 0 "#PWR0141" H 2300 2600 50  0001 C CNN
+F 1 "+12V" H 2315 2923 50  0000 C CNN
+F 2 "" H 2300 2750 50  0001 C CNN
+F 3 "" H 2300 2750 50  0001 C CNN
+	1    2300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:DRV8870DDA U18
+U 1 1 5F23C3D2
+P 2300 4800
+F 0 "U18" H 2050 5050 50  0000 C CNN
+F 1 "TB67H451FNG" H 2600 5050 50  0000 C CNN
+F 2 "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias" H 2400 4700 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=68598&prodName=TB67H451FNG" H 2050 5150 50  0001 C CNN
+F 4 "264-TB67H451FNGELCT-ND" H 2300 4800 50  0001 C CNN "Digikey"
+F 5 "3A, pin compatible with DRV8870 with lower (1uA vs 10uA) quiescent" H 2300 4800 50  0001 C CNN "Rating"
+F 6 "TB67H451FNG,EL" H 2300 4800 50  0001 C CNN "Manufacturer pn"
+	1    2300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5200 2300 5300
+Wire Wire Line
+	1900 4800 1425 4800
+Wire Wire Line
+	1650 5000 1900 5000
+Text GLabel 975  4700 0    50   Input ~ 0
+ACT5CTLA
+Text GLabel 975  4800 0    50   Input ~ 0
+ACT5CTLB
+Wire Wire Line
+	2700 5000 2750 5000
+Wire Wire Line
+	2750 5300 2300 5300
+Connection ~ 2300 5300
+Wire Wire Line
+	2300 5300 2300 5345
+Wire Wire Line
+	1650 5000 1650 4450
+Wire Wire Line
+	2750 5000 2750 5300
+$Comp
+L power:+3V3 #PWR0127
+U 1 1 5F23C3EA
+P 1650 4450
+F 0 "#PWR0127" H 1650 4300 50  0001 C CNN
+F 1 "+3V3" H 1665 4623 50  0000 C CNN
+F 2 "" H 1650 4450 50  0001 C CNN
+F 3 "" H 1650 4450 50  0001 C CNN
+	1    1650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  4700 1175 4700
+Text Label 3000 4700 0    50   ~ 0
+OUT5A
+Text Label 3000 4800 0    50   ~ 0
+OUT5B
+$Comp
+L power:GND #PWR0144
+U 1 1 5F23C3F3
+P 2300 5400
+F 0 "#PWR0144" H 2300 5150 50  0001 C CNN
+F 1 "GND" H 2305 5227 50  0000 C CNN
+F 2 "" H 2300 5400 50  0001 C CNN
+F 3 "" H 2300 5400 50  0001 C CNN
+	1    2300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4700 3250 4700
+Wire Wire Line
+	2700 4800 3250 4800
+$Comp
+L Connector_Generic:Conn_01x02 J15
+U 1 1 5F23C3FD
+P 3450 4700
+F 0 "J15" H 3530 4692 50  0000 L CNN
+F 1 "Molex_KK100_2" H 3530 4601 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3450 4700 50  0001 C CNN
+F 3 "~" H 3450 4700 50  0001 C CNN
+F 4 "WM13450-ND" H 3450 4700 50  0001 C CNN "Digikey"
+F 5 "0022235021" H 3450 4700 50  0001 C CNN "Manufacturer pn"
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0145
+U 1 1 5F25F121
+P 2035 4205
+F 0 "#PWR0145" H 2035 4055 50  0001 C CNN
+F 1 "+12V" H 2050 4378 50  0000 C CNN
+F 2 "" H 2035 4205 50  0001 C CNN
+F 3 "" H 2035 4205 50  0001 C CNN
+	1    2035 4205
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FAB871A
+P 5185 1720
+AR Path="/5EA4EECB/5FAB871A" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FAB871A" Ref="R26"  Part="1" 
+F 0 "R26" H 4985 1720 50  0000 L CNN
+F 1 "220k" H 4935 1620 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5225 1710 50  0001 C CNN
+F 3 "~" H 5185 1720 50  0001 C CNN
+F 4 "P220KGCT-ND" H 5185 1720 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 5185 1720 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 5185 1720 50  0001 C CNN "Manufacturer pn"
+	1    5185 1720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FAB8723
+P 5435 1720
+AR Path="/5EA4EECB/5FAB8723" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FAB8723" Ref="R28"  Part="1" 
+F 0 "R28" H 5503 1766 50  0000 L CNN
+F 1 "220k" H 5503 1675 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5475 1710 50  0001 C CNN
+F 3 "~" H 5435 1720 50  0001 C CNN
+F 4 "P220KGCT-ND" H 5435 1720 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 5435 1720 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 5435 1720 50  0001 C CNN "Manufacturer pn"
+	1    5435 1720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5185 1870 5185 1970
+Wire Wire Line
+	5185 1970 5435 1970
+Wire Wire Line
+	5435 1870 5435 1970
+Connection ~ 5435 1970
+Wire Wire Line
+	5185 1570 5185 1300
+Connection ~ 5185 1300
+Wire Wire Line
+	5185 1300 5850 1300
+Wire Wire Line
+	5435 1570 5435 1400
+Connection ~ 5435 1400
+Wire Wire Line
+	5435 1400 5090 1400
+Wire Wire Line
+	5435 1970 6250 1970
+Connection ~ 6250 1970
+Wire Wire Line
+	6250 1970 6250 2000
+$Comp
+L Device:R_US R?
+U 1 1 5FACE2B5
+P 5350 3415
+AR Path="/5EA4EECB/5FACE2B5" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FACE2B5" Ref="R27"  Part="1" 
+F 0 "R27" H 5150 3415 50  0000 L CNN
+F 1 "220k" H 5100 3315 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5390 3405 50  0001 C CNN
+F 3 "~" H 5350 3415 50  0001 C CNN
+F 4 "P220KGCT-ND" H 5350 3415 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 5350 3415 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 5350 3415 50  0001 C CNN "Manufacturer pn"
+	1    5350 3415
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FACE2BE
+P 5540 3420
+AR Path="/5EA4EECB/5FACE2BE" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FACE2BE" Ref="R29"  Part="1" 
+F 0 "R29" H 5608 3466 50  0000 L CNN
+F 1 "220k" H 5608 3375 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5580 3410 50  0001 C CNN
+F 3 "~" H 5540 3420 50  0001 C CNN
+F 4 "P220KGCT-ND" H 5540 3420 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 5540 3420 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 5540 3420 50  0001 C CNN "Manufacturer pn"
+	1    5540 3420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3565 5350 3670
+Wire Wire Line
+	5350 3670 5540 3670
+Wire Wire Line
+	5540 3570 5540 3670
+Connection ~ 5540 3670
+Wire Wire Line
+	5350 3265 5350 3000
+Connection ~ 5350 3000
+Wire Wire Line
+	5540 3670 6300 3670
+Connection ~ 6300 3670
+Wire Wire Line
+	6300 3670 6300 3700
+$Comp
+L Device:R_US R?
+U 1 1 5FAE6FC2
+P 1175 5095
+AR Path="/5EA4EECB/5FAE6FC2" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FAE6FC2" Ref="R23"  Part="1" 
+F 0 "R23" H 975 5095 50  0000 L CNN
+F 1 "220k" H 925 4995 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1215 5085 50  0001 C CNN
+F 3 "~" H 1175 5095 50  0001 C CNN
+F 4 "P220KGCT-ND" H 1175 5095 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 1175 5095 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 1175 5095 50  0001 C CNN "Manufacturer pn"
+	1    1175 5095
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FAE6FCB
+P 1425 5095
+AR Path="/5EA4EECB/5FAE6FCB" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FAE6FCB" Ref="R25"  Part="1" 
+F 0 "R25" H 1493 5141 50  0000 L CNN
+F 1 "220k" H 1493 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1465 5085 50  0001 C CNN
+F 3 "~" H 1425 5095 50  0001 C CNN
+F 4 "P220KGCT-ND" H 1425 5095 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 1425 5095 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 1425 5095 50  0001 C CNN "Manufacturer pn"
+	1    1425 5095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1175 5245 1175 5345
+Wire Wire Line
+	1175 5345 1425 5345
+Wire Wire Line
+	1425 5245 1425 5345
+Connection ~ 1425 5345
+Wire Wire Line
+	1425 5345 2300 5345
+Connection ~ 2300 5345
+Wire Wire Line
+	2300 5345 2300 5400
+Wire Wire Line
+	1175 4945 1175 4700
+Connection ~ 1175 4700
+$Comp
+L Device:R_US R?
+U 1 1 5FB00BD4
+P 1170 3450
+AR Path="/5EA4EECB/5FB00BD4" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FB00BD4" Ref="R21"  Part="1" 
+F 0 "R21" H 970 3450 50  0000 L CNN
+F 1 "220k" H 920 3350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1210 3440 50  0001 C CNN
+F 3 "~" H 1170 3450 50  0001 C CNN
+F 4 "P220KGCT-ND" H 1170 3450 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 1170 3450 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 1170 3450 50  0001 C CNN "Manufacturer pn"
+	1    1170 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FB00BDD
+P 1420 3450
+AR Path="/5EA4EECB/5FB00BDD" Ref="R?"  Part="1" 
+AR Path="/5EC52B81/5FB00BDD" Ref="R24"  Part="1" 
+F 0 "R24" H 1488 3496 50  0000 L CNN
+F 1 "220k" H 1488 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1460 3440 50  0001 C CNN
+F 3 "~" H 1420 3450 50  0001 C CNN
+F 4 "P220KGCT-ND" H 1420 3450 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 1420 3450 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 1420 3450 50  0001 C CNN "Manufacturer pn"
+	1    1420 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1170 3600 1170 3700
+Wire Wire Line
+	1170 3700 1420 3700
+Wire Wire Line
+	1420 3600 1420 3700
+Connection ~ 1420 3700
+Wire Wire Line
+	1420 3700 2300 3700
+Connection ~ 2300 3700
+Wire Wire Line
+	2300 3700 2300 3750
+Wire Wire Line
+	1170 3300 1170 3050
+Connection ~ 1170 3050
+Wire Wire Line
+	1170 3050 1900 3050
+Wire Wire Line
+	1420 3300 1420 3150
+Connection ~ 1420 3150
+Wire Wire Line
+	1420 3150 1005 3150
+Wire Wire Line
+	5350 3000 5900 3000
+Wire Wire Line
+	5540 3270 5540 3100
+Wire Wire Line
+	5245 3100 5540 3100
+Connection ~ 5540 3100
+Wire Wire Line
+	5540 3100 5900 3100
+Wire Wire Line
+	1175 4700 1900 4700
+Wire Wire Line
+	1425 4945 1425 4800
+Connection ~ 1425 4800
+Wire Wire Line
+	1425 4800 975  4800
+$Comp
+L power:+12V #PWR0137
+U 1 1 5FB7DE1E
+P 6250 1000
+F 0 "#PWR0137" H 6250 850 50  0001 C CNN
+F 1 "+12V" H 6265 1173 50  0000 C CNN
+F 2 "" H 6250 1000 50  0001 C CNN
+F 3 "" H 6250 1000 50  0001 C CNN
+	1    6250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0173
+U 1 1 5FB873AC
+P 2630 4215
+F 0 "#PWR0173" H 2630 4065 50  0001 C CNN
+F 1 "+BATT" H 2645 4388 50  0000 C CNN
+F 2 "" H 2630 4215 50  0001 C CNN
+F 3 "" H 2630 4215 50  0001 C CNN
+	1    2630 4215
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male JP?
+U 1 1 5FBA817F
+P 2300 4075
+AR Path="/5EA4EECB/5FBA817F" Ref="JP?"  Part="1" 
+AR Path="/5EC52B81/5FBA817F" Ref="JP14"  Part="1" 
+F 0 "JP14" V 2550 4125 50  0000 L CNN
+F 1 "PinHead_2.54mm_3" H 2408 4265 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2300 4075 50  0001 C CNN
+F 3 "~" H 2300 4075 50  0001 C CNN
+	1    2300 4075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 4275 2300 4410
+Wire Wire Line
+	2035 4205 2035 4335
+Wire Wire Line
+	2035 4335 2200 4335
+Wire Wire Line
+	2200 4335 2200 4275
+Wire Wire Line
+	2400 4275 2400 4340
+Wire Wire Line
+	2400 4340 2630 4340
+Wire Wire Line
+	2630 4340 2630 4215
+$Comp
+L Device:C C?
+U 1 1 5FC0DD51
+P 4600 3790
+AR Path="/5EB2DABF/5FC0DD51" Ref="C?"  Part="1" 
+AR Path="/5EC52B81/5FC0DD51" Ref="C26"  Part="1" 
+F 0 "C26" H 4715 3836 50  0000 L CNN
+F 1 "22u" H 4715 3745 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4638 3640 50  0001 C CNN
+F 3 "~" H 4600 3790 50  0001 C CNN
+F 4 "25V" H 4600 3790 50  0001 C CNN "Rating"
+	1    4600 3790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4015 4600 3965
+$Comp
+L power:+12V #PWR0174
+U 1 1 5FC244A0
+P 4600 3565
+F 0 "#PWR0174" H 4600 3415 50  0001 C CNN
+F 1 "+12V" H 4615 3738 50  0000 C CNN
+F 2 "" H 4600 3565 50  0001 C CNN
+F 3 "" H 4600 3565 50  0001 C CNN
+	1    4600 3565
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3640 4600 3605
+$Comp
+L power:GND #PWR0175
+U 1 1 5FC2CEDE
+P 4600 4015
+F 0 "#PWR0175" H 4600 3765 50  0001 C CNN
+F 1 "GND" H 4605 3842 50  0000 C CNN
+F 2 "" H 4600 4015 50  0001 C CNN
+F 3 "" H 4600 4015 50  0001 C CNN
+	1    4600 4015
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FC38FB6
+P 4250 3790
+AR Path="/5EB2DABF/5FC38FB6" Ref="C?"  Part="1" 
+AR Path="/5EC52B81/5FC38FB6" Ref="C27"  Part="1" 
+F 0 "C27" H 4365 3836 50  0000 L CNN
+F 1 "22u" H 4365 3745 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4288 3640 50  0001 C CNN
+F 3 "~" H 4250 3790 50  0001 C CNN
+F 4 "25V" H 4250 3790 50  0001 C CNN "Rating"
+	1    4250 3790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3965 4250 3940
+Wire Wire Line
+	4250 3640 4250 3605
+Wire Wire Line
+	4250 3605 4600 3605
+Connection ~ 4600 3605
+Wire Wire Line
+	4600 3605 4600 3565
+Wire Wire Line
+	4250 3965 4600 3965
+Connection ~ 4600 3965
+Wire Wire Line
+	4600 3965 4600 3940
+$Comp
+L Device:C C?
+U 1 1 5FC5E784
+P 4595 4650
+AR Path="/5EB2DABF/5FC5E784" Ref="C?"  Part="1" 
+AR Path="/5EC52B81/5FC5E784" Ref="C28"  Part="1" 
+F 0 "C28" H 4710 4696 50  0000 L CNN
+F 1 "22u" H 4710 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4633 4500 50  0001 C CNN
+F 3 "~" H 4595 4650 50  0001 C CNN
+F 4 "25V" H 4595 4650 50  0001 C CNN "Rating"
+	1    4595 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4410 4595 4410
+Wire Wire Line
+	4595 4410 4595 4500
+Connection ~ 2300 4410
+Wire Wire Line
+	2300 4410 2300 4500
+$Comp
+L power:GND #PWR0176
+U 1 1 5FC7FC14
+P 4595 4855
+F 0 "#PWR0176" H 4595 4605 50  0001 C CNN
+F 1 "GND" H 4600 4682 50  0000 C CNN
+F 2 "" H 4595 4855 50  0001 C CNN
+F 3 "" H 4595 4855 50  0001 C CNN
+	1    4595 4855
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4595 4800 4595 4855
+$EndSCHEMATC

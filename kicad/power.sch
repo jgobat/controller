@@ -1,0 +1,1045 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 3 5
+Title "Float controller"
+Date "2020-04-19"
+Rev "1.00"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5150 3650 5250 3650
+Wire Wire Line
+	5250 3650 5250 3850
+Text Label 5150 3650 0    10   ~ 0
+GND
+Wire Wire Line
+	8550 5850 8450 5850
+Wire Wire Line
+	8450 5850 8450 6250
+Text Label 8550 5850 0    10   ~ 0
+GND
+Wire Wire Line
+	5150 2250 5450 2250
+Wire Wire Line
+	5450 2250 5450 2850
+Wire Wire Line
+	5450 2850 5450 2950
+Wire Wire Line
+	6050 2750 6050 2850
+Wire Wire Line
+	6050 2850 5450 2850
+Connection ~ 5450 2850
+Text Label 5150 2250 0    10   ~ 0
+GND
+Wire Wire Line
+	7350 3750 7250 3750
+Wire Wire Line
+	7250 3750 7250 4250
+Wire Wire Line
+	7250 4250 7250 4350
+Wire Wire Line
+	7250 4350 7250 4450
+Wire Wire Line
+	6850 3950 6850 4250
+Wire Wire Line
+	6850 4250 7250 4250
+Wire Wire Line
+	8250 4350 7250 4350
+Wire Wire Line
+	8250 4350 8250 3950
+Connection ~ 7250 4350
+Connection ~ 7250 4250
+Text Label 7350 3750 0    10   ~ 0
+GND
+Wire Wire Line
+	8250 2650 8150 2650
+Wire Wire Line
+	8150 2650 8150 2850
+Text Label 8250 2650 0    10   ~ 0
+GND
+Wire Wire Line
+	6150 6650 6150 6750
+Wire Wire Line
+	6150 6750 6450 6750
+Wire Wire Line
+	6450 6750 6450 6350
+Wire Wire Line
+	6150 6750 6150 6850
+Connection ~ 6150 6750
+Text Label 6150 6650 0    10   ~ 0
+GND
+Wire Wire Line
+	8150 8550 8050 8550
+Wire Wire Line
+	8050 8550 8050 8650
+Wire Wire Line
+	8050 8650 8050 8750
+Wire Wire Line
+	8050 8750 8050 8850
+Wire Wire Line
+	8050 8850 8050 8950
+Wire Wire Line
+	8150 8650 8050 8650
+Wire Wire Line
+	8150 8750 8050 8750
+Wire Wire Line
+	7750 8650 7750 8850
+Wire Wire Line
+	7750 8850 8050 8850
+Connection ~ 8050 8750
+Connection ~ 8050 8650
+Connection ~ 8050 8850
+Text Label 8150 8550 0    10   ~ 0
+GND
+Wire Wire Line
+	9450 8650 9450 8850
+Text Label 9450 8650 0    10   ~ 0
+GND
+Wire Wire Line
+	8150 7550 8050 7550
+Wire Wire Line
+	8050 7550 8050 7650
+Text Label 8150 7550 0    10   ~ 0
+GND
+Wire Wire Line
+	9650 5450 9750 5450
+Wire Wire Line
+	9750 5450 9750 5550
+Wire Wire Line
+	9750 5550 9750 6050
+Wire Wire Line
+	9650 5550 9750 5550
+Connection ~ 9750 5550
+Text Label 9650 5450 0    10   ~ 0
+GND
+Wire Wire Line
+	8150 8350 8050 8350
+Wire Wire Line
+	8050 8350 8050 8250
+Wire Wire Line
+	8150 8250 8050 8250
+Wire Wire Line
+	8050 8250 7750 8250
+Wire Wire Line
+	7750 8250 7750 8350
+Wire Wire Line
+	8150 7250 7950 7250
+Wire Wire Line
+	7750 7250 7750 8250
+Connection ~ 8050 8250
+Connection ~ 7750 7250
+Wire Wire Line
+	9650 5350 9850 5350
+Wire Wire Line
+	9850 5350 9850 5050
+Text Label 9850 5050 0    70   ~ 0
++3V3
+Wire Wire Line
+	9650 5750 10450 5750
+Wire Wire Line
+	9650 5850 10450 5850
+Wire Wire Line
+	9650 5650 10450 5650
+Wire Wire Line
+	5150 2150 6050 2150
+Wire Wire Line
+	6050 2250 6050 2150
+Wire Wire Line
+	8250 2150 6850 2150
+Wire Wire Line
+	6850 2150 6050 2150
+Wire Wire Line
+	6850 2150 6850 1900
+Connection ~ 6050 2150
+Connection ~ 6850 2150
+Wire Wire Line
+	6850 3550 6850 3650
+Wire Wire Line
+	6650 3550 6850 3550
+Wire Wire Line
+	6650 3550 6650 4850
+Wire Wire Line
+	6450 4950 6450 4850
+Wire Wire Line
+	6450 4850 6650 4850
+Connection ~ 6850 3550
+Text Label 5250 3550 0    70   ~ 0
+VBATT_UNSWITCHED
+Connection ~ 6650 4850
+Wire Wire Line
+	8050 3550 8250 3550
+Wire Wire Line
+	8250 3550 8250 3350
+Wire Wire Line
+	8250 3650 8250 3550
+Connection ~ 8250 3550
+Wire Wire Line
+	8250 1950 8150 1950
+Wire Wire Line
+	8150 1950 8150 1400
+Wire Wire Line
+	8150 1400 8150 1200
+Wire Wire Line
+	7250 1400 8150 1400
+Wire Wire Line
+	7250 1500 7250 1400
+Connection ~ 8150 1400
+Wire Wire Line
+	6750 5450 6450 5450
+Wire Wire Line
+	6450 5950 6450 5450
+Wire Wire Line
+	6450 5450 6450 5350
+Connection ~ 6450 5450
+Wire Wire Line
+	6750 5250 6650 5250
+Wire Wire Line
+	6650 5250 6650 5150
+Wire Wire Line
+	6650 5150 6650 5050
+Wire Wire Line
+	6750 5150 6650 5150
+Wire Wire Line
+	6750 5050 6650 5050
+Connection ~ 6650 5150
+Connection ~ 6650 5050
+Wire Wire Line
+	6150 6250 6150 6200
+Wire Wire Line
+	6150 6200 6200 6200
+Wire Wire Line
+	6150 6200 5650 6200
+Connection ~ 6150 6200
+Text Label 5650 6200 0    70   ~ 0
+PWRCTL
+Wire Wire Line
+	8250 2450 7650 2450
+Text Label 7650 2450 0    70   ~ 0
+PWRCTL
+Wire Wire Line
+	7550 5350 7750 5350
+Wire Wire Line
+	7750 5350 7750 5250
+Wire Wire Line
+	7750 5250 7750 5150
+Wire Wire Line
+	7750 5150 7750 5050
+Wire Wire Line
+	7550 5250 7750 5250
+Wire Wire Line
+	7550 5150 7750 5150
+Wire Wire Line
+	7550 5050 7750 5050
+Connection ~ 7750 5250
+Connection ~ 7750 5150
+Connection ~ 7750 5350
+Wire Wire Line
+	8250 2350 7250 2350
+Wire Wire Line
+	7250 2350 7250 1900
+Wire Wire Line
+	9150 8450 9250 8450
+Wire Wire Line
+	9250 8450 9250 8250
+Wire Wire Line
+	9250 8250 9150 8250
+Wire Wire Line
+	9250 8250 9450 8250
+Wire Wire Line
+	9450 8350 9450 8250
+Wire Wire Line
+	9450 8250 9450 7250
+Wire Wire Line
+	9450 7250 8850 7250
+Wire Wire Line
+	9450 7250 9450 7050
+Connection ~ 9250 8250
+Connection ~ 9450 8250
+Connection ~ 9450 7250
+Wire Wire Line
+	8250 2250 7650 2250
+Wire Wire Line
+	8250 2050 7650 2050
+$Comp
+L floatController-legacy:TI-INA226 U?
+U 1 1 5EB44353
+P 9150 5650
+AR Path="/5EB44353" Ref="U?"  Part="1" 
+AR Path="/5EB2DABF/5EB44353" Ref="U5"  Part="1" 
+F 0 "U5" H 8850 5150 59  0000 L BNN
+F 1 "INA233" H 8850 6150 59  0000 L BNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 9150 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/sbos790/sbos790.pdf" H 9150 5650 50  0001 C CNN
+F 4 "296-48136-1-ND" H 9150 5650 50  0001 C CNN "Digikey"
+F 5 "INA233AIDGSR" H 9150 5650 50  0001 C CNN "Manufacturer pn"
+	1    9150 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:MTA02-156 J?
+U 1 1 5EB44359
+P 5050 3550
+AR Path="/5EB44359" Ref="J?"  Part="1" 
+AR Path="/5EB2DABF/5EB44359" Ref="J1"  Part="1" 
+F 0 "J1" H 5250 3550 59  0000 L BNN
+F 1 "Molex_KK156_2" H 4900 3650 59  0000 L BNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 5050 3550 50  0001 C CNN
+F 3 "" H 5050 3550 50  0001 C CNN
+F 4 "WM18823-ND" H 5050 3550 50  0001 C CNN "Digikey"
+F 5 "‎0009652028‎" H 5050 3550 50  0001 C CNN "Manufacturer pn"
+	1    5050 3550
+	0    -1   1    0   
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB4435F
+P 5250 3950
+AR Path="/5EB4435F" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB4435F" Ref="#SUPPLY0106"  Part="1" 
+F 0 "#SUPPLY0106" H 5250 3950 50  0001 C CNN
+F 1 "GND" H 5175 3825 59  0000 L BNN
+F 2 "" H 5250 3950 50  0001 C CNN
+F 3 "" H 5250 3950 50  0001 C CNN
+	1    5250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB4436B
+P 8450 6350
+AR Path="/5EB4436B" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB4436B" Ref="#SUPPLY0107"  Part="1" 
+F 0 "#SUPPLY0107" H 8450 6350 50  0001 C CNN
+F 1 "GND" H 8375 6225 59  0000 L BNN
+F 2 "" H 8450 6350 50  0001 C CNN
+F 3 "" H 8450 6350 50  0001 C CNN
+	1    8450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:TINY13PU U?
+U 1 1 5EB44371
+P 9050 2450
+AR Path="/5EB44371" Ref="U?"  Part="1" 
+AR Path="/5EB2DABF/5EB44371" Ref="U2"  Part="1" 
+F 0 "U2" H 8350 3100 59  0000 L BNN
+F 1 "TINY25" H 8350 2050 59  0000 L BNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 9050 2450 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589893" H 9050 2450 50  0001 C CNN
+F 4 "ATTINY25-20PU-ND" H 9050 2450 50  0001 C CNN "Digikey"
+F 5 "20MHz" H 9050 2450 50  0001 C CNN "Rating"
+F 6 "ATTINY25-20PU" H 9050 2450 50  0001 C CNN "Manufacturer pn"
+	1    9050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:SI4497 Q?
+U 1 1 5EB44383
+P 7150 5150
+AR Path="/5EB44383" Ref="Q?"  Part="1" 
+AR Path="/5EB2DABF/5EB44383" Ref="Q2"  Part="1" 
+F 0 "Q2" H 6850 4590 59  0000 L BNN
+F 1 "SI4497" H 6870 5360 59  0000 L BNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7150 5150 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/65748/si4497dy.pdf" H 7150 5150 50  0001 C CNN
+F 4 "SI4497DY-T1-GE3CT-ND" H 7150 5150 50  0001 C CNN "Digikey"
+F 5 "SI4497DY-T1-GE3" H 7150 5150 50  0001 C CNN "Manufacturer pn"
+	1    7150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:SI2334 Q?
+U 1 1 5EB44389
+P 6450 6150
+AR Path="/5EB44389" Ref="Q?"  Part="1" 
+AR Path="/5EB2DABF/5EB44389" Ref="Q1"  Part="1" 
+F 0 "Q1" V 6710 6250 59  0000 L BNN
+F 1 "DMN3023L-7" V 6340 6320 59  0000 L BNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6450 6150 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMN3023L.pdf" H 6450 6150 50  0001 C CNN
+F 4 "DMN3023L-7DICT-ND" V 6450 6150 50  0001 C CNN "Digikey"
+F 5 "DMN3023L-7" H 6450 6150 50  0001 C CNN "Manufacturer pn"
+	1    6450 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L floatController-legacy:REED-SWITCH-MK6-6 SW?
+U 1 1 5EB4438F
+P 6050 2550
+AR Path="/5EB4438F" Ref="SW?"  Part="1" 
+AR Path="/5EB2DABF/5EB4438F" Ref="SW1"  Part="1" 
+F 0 "SW1" H 6150 2650 59  0000 L BNN
+F 1 "MS-106-3-x" H 6150 2550 59  0000 L BNN
+F 2 "floatController:MK6-6" H 6050 2550 50  0001 C CNN
+F 3 "" H 6050 2550 50  0001 C CNN
+F 4 "2010-1085-ND" H 6050 2550 50  0001 C CNN "Digikey"
+F 5 "10-15AT (others available)" H 6050 2550 50  0001 C CNN "Rating"
+F 6 "MS-106-3-1" H 6050 2550 50  0001 C CNN "Manufacturer pn"
+	1    6050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:PINHD-1X2 J?
+U 1 1 5EB44395
+P 5050 2250
+AR Path="/5EB44395" Ref="J?"  Part="1" 
+AR Path="/5EB2DABF/5EB44395" Ref="JP1"  Part="1" 
+F 0 "JP1" H 4800 2475 59  0000 L BNN
+F 1 "PinHead_2.54mm_2" H 4800 2050 59  0000 L BNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5050 2250 50  0001 C CNN
+F 3 "" H 5050 2250 50  0001 C CNN
+	1    5050 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB4439B
+P 5450 3050
+AR Path="/5EB4439B" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB4439B" Ref="#SUPPLY0108"  Part="1" 
+F 0 "#SUPPLY0108" H 5450 3050 50  0001 C CNN
+F 1 "GND" H 5375 2925 59  0000 L BNN
+F 2 "" H 5450 3050 50  0001 C CNN
+F 3 "" H 5450 3050 50  0001 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB443A1
+P 8150 2950
+AR Path="/5EB443A1" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB443A1" Ref="#SUPPLY0109"  Part="1" 
+F 0 "#SUPPLY0109" H 8150 2950 50  0001 C CNN
+F 1 "GND" H 8075 2825 59  0000 L BNN
+F 2 "" H 8150 2950 50  0001 C CNN
+F 3 "" H 8150 2950 50  0001 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB443A7
+P 7250 4550
+AR Path="/5EB443A7" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB443A7" Ref="#SUPPLY0110"  Part="1" 
+F 0 "#SUPPLY0110" H 7250 4550 50  0001 C CNN
+F 1 "GND" H 7175 4425 59  0000 L BNN
+F 2 "" H 7250 4550 50  0001 C CNN
+F 3 "" H 7250 4550 50  0001 C CNN
+	1    7250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:C-EUC0805 C?
+U 1 1 5EB443B3
+P 6850 3750
+AR Path="/5EB443B3" Ref="C?"  Part="1" 
+AR Path="/5EB2DABF/5EB443B3" Ref="C3"  Part="1" 
+F 0 "C3" H 6910 3765 59  0000 L BNN
+F 1 "10u" H 6910 3565 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 3750 50  0001 C CNN
+F 3 "" H 6850 3750 50  0001 C CNN
+F 4 "490-10514-1-ND‎" H 6850 3750 50  0001 C CNN "Digikey"
+F 5 "2.2u at 15V" H 6850 3750 50  0001 C CNN "Rating"
+F 6 "GRM21BR6YA106KE43L‎" H 6850 3750 50  0001 C CNN "Manufacturer pn"
+	1    6850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:R0603 R?
+U 1 1 5EB443BF
+P 6450 5350
+AR Path="/5EB443BF" Ref="R?"  Part="1" 
+AR Path="/5EB2DABF/5EB443BF" Ref="R3"  Part="1" 
+F 0 "R3" H 6500 5409 59  0000 L BNN
+F 1 "220k" H 6500 5220 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6450 5350 50  0001 C CNN
+F 3 "" H 6450 5350 50  0001 C CNN
+F 4 "P220KGCT-ND" H 6450 5350 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 6450 5350 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 6450 5350 50  0001 C CNN "Manufacturer pn"
+	1    6450 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L floatController-legacy:R0603 R?
+U 1 1 5EB443C5
+P 6150 6650
+AR Path="/5EB443C5" Ref="R?"  Part="1" 
+AR Path="/5EB2DABF/5EB443C5" Ref="R2"  Part="1" 
+F 0 "R2" H 6200 6709 59  0000 L BNN
+F 1 "220k" H 6200 6520 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6150 6650 50  0001 C CNN
+F 3 "" H 6150 6650 50  0001 C CNN
+F 4 "P220KGCT-ND" H 6150 6650 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 6150 6650 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 6150 6650 50  0001 C CNN "Manufacturer pn"
+	1    6150 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB443CB
+P 6150 6950
+AR Path="/5EB443CB" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB443CB" Ref="#SUPPLY0112"  Part="1" 
+F 0 "#SUPPLY0112" H 6150 6950 50  0001 C CNN
+F 1 "GND" H 6075 6825 59  0000 L BNN
+F 2 "" H 6150 6950 50  0001 C CNN
+F 3 "" H 6150 6950 50  0001 C CNN
+	1    6150 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:TPSM842X U?
+U 1 1 5EB443D1
+P 8150 7250
+AR Path="/5EB443D1" Ref="U?"  Part="1" 
+AR Path="/5EB2DABF/5EB443D1" Ref="U4"  Part="1" 
+F 0 "U4" H 8250 7410 59  0000 L BNN
+F 1 "TPSM842X" H 8250 6700 59  0000 L BNN
+F 2 "floatController:TPSM842X" H 8150 7250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpsm84203.pdf" H 8150 7250 50  0001 C CNN
+F 4 "296-47074-ND" H 8150 7250 50  0001 C CNN "Digikey"
+F 5 "7-28V, 1.5A, " H 8150 7250 50  0001 C CNN "Rating"
+F 6 "TPSM84205EAB" H 8150 7250 50  0001 C CNN "Manufacturer pn"
+	1    8150 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:LMZM2360X U?
+U 1 1 5EB443D7
+P 8150 8250
+AR Path="/5EB443D7" Ref="U?"  Part="1" 
+AR Path="/5EB2DABF/5EB443D7" Ref="U3"  Part="1" 
+F 0 "U3" H 8250 8410 59  0000 L BNN
+F 1 "LMZM2360X" H 8350 7500 59  0000 L BNN
+F 2 "floatController:LMZM2360X" H 8150 8250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmzm23601.pdf" H 8150 8250 50  0001 C CNN
+F 4 "296-49462-1-ND" H 8150 8250 50  0001 C CNN "Digikey"
+F 5 "4-36V, 1A, 28uA supply" H 8150 8250 50  0001 C CNN "Rating"
+F 6 "LMZM23601V5SILT" H 8150 8250 50  0001 C CNN "Manufacturer pn"
+	1    8150 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB443DD
+P 8050 9050
+AR Path="/5EB443DD" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB443DD" Ref="#SUPPLY0113"  Part="1" 
+F 0 "#SUPPLY0113" H 8050 9050 50  0001 C CNN
+F 1 "GND" H 7975 8925 59  0000 L BNN
+F 2 "" H 8050 9050 50  0001 C CNN
+F 3 "" H 8050 9050 50  0001 C CNN
+	1    8050 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:C-EUC1210 C?
+U 1 1 5EB443E3
+P 7750 8450
+AR Path="/5EB443E3" Ref="C?"  Part="1" 
+AR Path="/5EB2DABF/5EB443E3" Ref="C1"  Part="1" 
+F 0 "C1" H 7810 8465 59  0000 L BNN
+F 1 "10u" H 7810 8265 59  0000 L BNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7750 8450 50  0001 C CNN
+F 3 "" H 7750 8450 50  0001 C CNN
+F 4 "490-4798-1-ND‎" H 7750 8450 50  0001 C CNN "Digikey"
+F 5 "7.3u effective at 15V" H 7750 8450 50  0001 C CNN "Rating"
+F 6 "‎GCM32ER71E106KA57L‎" H 7750 8450 50  0001 C CNN "Manufacturer pn"
+	1    7750 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:C-EUC1210 C?
+U 1 1 5EB443E9
+P 9450 8450
+AR Path="/5EB443E9" Ref="C?"  Part="1" 
+AR Path="/5EB2DABF/5EB443E9" Ref="C2"  Part="1" 
+F 0 "C2" H 9510 8465 59  0000 L BNN
+F 1 "22u" H 9510 8265 59  0000 L BNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9450 8450 50  0001 C CNN
+F 3 "" H 9450 8450 50  0001 C CNN
+F 4 "490-4797-1-ND‎" H 9450 8450 50  0001 C CNN "Digikey"
+F 5 "20u effective at 5V" H 9450 8450 50  0001 C CNN "Rating"
+F 6 "‎GCM32ER71A226KE12L‎" H 9450 8450 50  0001 C CNN "Manufacturer pn"
+	1    9450 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB443EF
+P 9450 8950
+AR Path="/5EB443EF" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB443EF" Ref="#SUPPLY0114"  Part="1" 
+F 0 "#SUPPLY0114" H 9450 8950 50  0001 C CNN
+F 1 "GND" H 9375 8825 59  0000 L BNN
+F 2 "" H 9450 8950 50  0001 C CNN
+F 3 "" H 9450 8950 50  0001 C CNN
+	1    9450 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB443F5
+P 8050 7750
+AR Path="/5EB443F5" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB443F5" Ref="#SUPPLY0115"  Part="1" 
+F 0 "#SUPPLY0115" H 8050 7750 50  0001 C CNN
+F 1 "GND" H 7975 7625 59  0000 L BNN
+F 2 "" H 8050 7750 50  0001 C CNN
+F 3 "" H 8050 7750 50  0001 C CNN
+	1    8050 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:R0603 R?
+U 1 1 5EB443FB
+P 6850 1900
+AR Path="/5EB443FB" Ref="R?"  Part="1" 
+AR Path="/5EB2DABF/5EB443FB" Ref="R4"  Part="1" 
+F 0 "R4" H 6900 1959 59  0000 L BNN
+F 1 "220k" H 6900 1770 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6850 1900 50  0001 C CNN
+F 3 "" H 6850 1900 50  0001 C CNN
+F 4 "P220KGCT-ND" H 6850 1900 50  0001 C CNN "Digikey"
+F 5 "5%, 1/10W" H 6850 1900 50  0001 C CNN "Rating"
+F 6 "ERJ-3GEYJ224V" H 6850 1900 50  0001 C CNN "Manufacturer pn"
+	1    6850 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5EB44401
+P 9750 6250
+AR Path="/5EB44401" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5EB44401" Ref="#SUPPLY0116"  Part="1" 
+F 0 "#SUPPLY0116" H 9750 6250 50  0001 C CNN
+F 1 "GND" H 9675 6125 59  0000 L BNN
+F 2 "" H 9750 6250 50  0001 C CNN
+F 3 "" H 9750 6250 50  0001 C CNN
+	1    9750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:R0603 R?
+U 1 1 5EB44407
+P 7250 1900
+AR Path="/5EB44407" Ref="R?"  Part="1" 
+AR Path="/5EB2DABF/5EB44407" Ref="R5"  Part="1" 
+F 0 "R5" H 7300 1959 59  0000 L BNN
+F 1 "10k" H 7300 1770 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7250 1900 50  0001 C CNN
+F 3 "" H 7250 1900 50  0001 C CNN
+F 4 "P10KGCT-ND" H 7250 1900 50  0001 C CNN "Digikey"
+F 5 "ERJ-3GEYJ103V" H 7250 1900 50  0001 C CNN "Manufacturer pn"
+	1    7250 1900
+	0    -1   -1   0   
+$EndComp
+Text Notes 7950 9350 0    59   ~ 0
+populate only one of U3 or U4\n
+Text Notes 8650 5050 0    59   ~ 0
+A0=A1=GND=1000000
+Wire Wire Line
+	6650 4850 6650 5050
+Connection ~ 7750 8250
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5EB73968
+P 9850 4900
+F 0 "#PWR0101" H 9850 4750 50  0001 C CNN
+F 1 "+3V3" H 9865 5073 50  0000 C CNN
+F 2 "" H 9850 4900 50  0001 C CNN
+F 3 "" H 9850 4900 50  0001 C CNN
+	1    9850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5EB92CD4
+P 9450 7050
+F 0 "#PWR0102" H 9450 6900 50  0001 C CNN
+F 1 "+5V" H 9465 7223 50  0000 C CNN
+F 2 "" H 9450 7050 50  0001 C CNN
+F 3 "" H 9450 7050 50  0001 C CNN
+	1    9450 7050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 2050 0    50   BiDi ~ 0
+SDA1
+Wire Wire Line
+	6850 1500 6850 1400
+Wire Wire Line
+	6850 1400 7250 1400
+Connection ~ 7250 1400
+Text GLabel 7650 2250 0    50   Input ~ 0
+SCL1
+Text GLabel 10450 5650 2    50   Output ~ 0
+PM_ALERT
+Text GLabel 10450 5750 2    50   BiDi ~ 0
+SDA1
+Text GLabel 10450 5850 2    50   Input ~ 0
+SCL1
+Wire Wire Line
+	5150 3550 6650 3550
+Connection ~ 6650 3550
+Wire Wire Line
+	7250 2350 7100 2350
+Connection ~ 7250 2350
+Text GLabel 7100 2350 0    50   Output ~ 0
+WD_RESET
+Wire Wire Line
+	7950 7250 7950 7000
+Connection ~ 7950 7250
+Wire Wire Line
+	7950 7250 7750 7250
+$Comp
+L Device:R_Shunt_US R1
+U 1 1 5F4CC3AB
+P 7750 5650
+F 0 "R1" H 7662 5696 50  0000 R CNN
+F 1 "0.025" H 7662 5605 50  0000 R CNN
+F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK24" V 7680 5650 50  0001 C CNN
+F 3 "https://www.ohmite.com/assets/docs/res_lvk.pdf?r=false" H 7750 5650 50  0001 C CNN
+F 4 "LVK24R025DERCT-ND" H 7750 5650 50  0001 C CNN "Digikey"
+F 5 "0.5%, 1W (6A)" H 7750 5650 50  0001 C CNN "Rating"
+F 6 "LVK24R025DER" H 7750 5650 50  0001 C CNN "Manufacturer pn"
+	1    7750 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5350 7750 5450
+Wire Wire Line
+	7900 5750 8350 5750
+Wire Wire Line
+	8350 5750 8350 5650
+Wire Wire Line
+	7750 5850 7750 7250
+$Comp
+L power:+3.3VA #PWR0120
+U 1 1 5F4EAC21
+P 8150 1200
+F 0 "#PWR0120" H 8150 1050 50  0001 C CNN
+F 1 "+3.3VA" H 8165 1373 50  0000 C CNN
+F 2 "" H 8150 1200 50  0001 C CNN
+F 3 "" H 8150 1200 50  0001 C CNN
+	1    8150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR0121
+U 1 1 5F4ECDDA
+P 8250 3350
+F 0 "#PWR0121" H 8250 3200 50  0001 C CNN
+F 1 "+3.3VA" H 8265 3523 50  0000 C CNN
+F 2 "" H 8250 3350 50  0001 C CNN
+F 3 "" H 8250 3350 50  0001 C CNN
+	1    8250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0122
+U 1 1 5F4F9A65
+P 7950 7000
+F 0 "#PWR0122" H 7950 6850 50  0001 C CNN
+F 1 "+BATT" H 7965 7173 50  0000 C CNN
+F 2 "" H 7950 7000 50  0001 C CNN
+F 3 "" H 7950 7000 50  0001 C CNN
+	1    7950 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5350 8350 5350
+Wire Wire Line
+	7900 5550 8550 5550
+Wire Wire Line
+	8350 5350 8350 5650
+Connection ~ 8350 5650
+Wire Wire Line
+	8350 5650 8550 5650
+$Comp
+L Device:C C?
+U 1 1 5F553385
+P 10100 5300
+AR Path="/5EA4EECB/5F553385" Ref="C?"  Part="1" 
+AR Path="/5EB2DABF/5F553385" Ref="C13"  Part="1" 
+F 0 "C13" H 10250 5350 50  0000 L CNN
+F 1 "0.1u" H 10250 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10138 5150 50  0001 C CNN
+F 3 "~" H 10100 5300 50  0001 C CNN
+F 4 "490-16477-1-ND" H 10100 5300 50  0001 C CNN "Digikey"
+F 5 "GCJ188R71E104KA12D‎" H 10100 5300 50  0001 C CNN "Manufacturer pn"
+	1    10100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5150 10100 5050
+Wire Wire Line
+	10100 5050 9850 5050
+Connection ~ 9850 5050
+Wire Wire Line
+	9850 5050 9850 4900
+Wire Wire Line
+	10100 5450 10100 6050
+Wire Wire Line
+	10100 6050 9750 6050
+Connection ~ 9750 6050
+Wire Wire Line
+	9750 6050 9750 6150
+Text Label 8000 5550 0    50   ~ 0
+SENSE+
+Text Label 8000 5750 0    50   ~ 0
+SENSE-
+Text Label 6350 2150 0    50   ~ 0
+DETECT
+$Comp
+L floatController-legacy:TPS709xx U12
+U 1 1 5EB3DE49
+P 7650 3750
+F 0 "U12" H 7700 4236 59  0000 C CNN
+F 1 "TPS709xx" H 7700 4131 59  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7650 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps709-q1.pdf?ts=1588465451714" H 7650 3750 50  0001 C CNN
+F 4 "‎296-35483-1-ND‎" H 7650 3750 50  0001 C CNN "Digikey"
+F 5 "150mA, 30V max, 2.05uA quiescent" H 7650 3750 50  0001 C CNN "Rating"
+F 6 "TPS70933DBVR" H 7650 3750 50  0001 C CNN "Manufacturer pn"
+	1    7650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3550 7350 3550
+$Comp
+L floatController-legacy:C-EUC0805 C?
+U 1 1 5EB4486A
+P 8250 3750
+AR Path="/5EB4486A" Ref="C?"  Part="1" 
+AR Path="/5EB2DABF/5EB4486A" Ref="C4"  Part="1" 
+F 0 "C4" H 8310 3765 59  0000 L BNN
+F 1 "4.7u" H 8310 3565 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8250 3750 50  0001 C CNN
+F 3 "" H 8250 3750 50  0001 C CNN
+F 4 "490-16347-1-ND" H 8250 3750 50  0001 C CNN "Digikey"
+F 5 "2.3u at 3.3V (min 1.5u for Vout > 1.5V)" H 8250 3750 50  0001 C CNN "Rating"
+F 6 "‎GRM185R61C475ME11D" H 8250 3750 50  0001 C CNN "Manufacturer pn"
+	1    8250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F41F883
+P 11550 1150
+F 0 "TP2" H 11608 1268 50  0000 L CNN
+F 1 "+3V3" H 11608 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 11750 1150 50  0001 C CNN
+F 3 "~" H 11750 1150 50  0001 C CNN
+F 4 "36-5000-ND" H 11550 1150 50  0001 C CNN "Digikey"
+F 5 "5000" H 11550 1150 50  0001 C CNN "Manufacturer pn"
+	1    11550 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11550 1150 11550 1250
+Wire Wire Line
+	11550 1250 11450 1250
+Wire Wire Line
+	11450 1250 11450 900 
+$Comp
+L power:+3V3 #PWR0171
+U 1 1 5F43D6F7
+P 11450 900
+F 0 "#PWR0171" H 11450 750 50  0001 C CNN
+F 1 "+3V3" H 11465 1073 50  0000 C CNN
+F 2 "" H 11450 900 50  0001 C CNN
+F 3 "" H 11450 900 50  0001 C CNN
+	1    11450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F43E52E
+P 11000 1150
+F 0 "TP1" H 11058 1268 50  0000 L CNN
+F 1 "+5V" H 11058 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 11200 1150 50  0001 C CNN
+F 3 "~" H 11200 1150 50  0001 C CNN
+F 4 "36-5000-ND" H 11000 1150 50  0001 C CNN "Digikey"
+F 5 "5000" H 11000 1150 50  0001 C CNN "Manufacturer pn"
+	1    11000 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 1150 11000 1250
+Wire Wire Line
+	11000 1250 10900 1250
+Wire Wire Line
+	10900 1250 10900 900 
+$Comp
+L power:+5V #PWR0172
+U 1 1 5F446BB6
+P 10900 900
+F 0 "#PWR0172" H 10900 750 50  0001 C CNN
+F 1 "+5V" H 10915 1073 50  0000 C CNN
+F 2 "" H 10900 900 50  0001 C CNN
+F 3 "" H 10900 900 50  0001 C CNN
+	1    10900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F448DE6
+P 12000 1150
+F 0 "TP3" H 12058 1268 50  0000 L CNN
+F 1 "GND" H 12058 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 12200 1150 50  0001 C CNN
+F 3 "~" H 12200 1150 50  0001 C CNN
+F 4 "36-5001-ND" H 12000 1150 50  0001 C CNN "Digikey"
+F 5 "5001" H 12000 1150 50  0001 C CNN "Manufacturer pn"
+	1    12000 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 1150 12000 1300
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5F44F042
+P 12000 1400
+AR Path="/5F44F042" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5F44F042" Ref="#SUPPLY0121"  Part="1" 
+F 0 "#SUPPLY0121" H 12000 1400 50  0001 C CNN
+F 1 "GND" H 11925 1275 59  0000 L BNN
+F 2 "" H 12000 1400 50  0001 C CNN
+F 3 "" H 12000 1400 50  0001 C CNN
+	1    12000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L floatController-legacy:BA06CC0 U17
+U 1 1 5F0C7907
+P 13550 4350
+F 0 "U17" H 13600 4836 59  0000 C CNN
+F 1 "BA06CC0WFP" H 13600 4731 59  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin6" H 13500 4000 50  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf" H 13550 4350 50  0001 C CNN
+F 4 " BA06CC0WFP-E2CT-ND " H 13550 4350 50  0001 C CNN "Digikey"
+F 5 "1A, 25V max, 0uA shutdown" H 13550 4350 50  0001 C CNN "Rating"
+F 6 " BA06CC0WFP-E2 " H 13550 4350 50  0001 C CNN "Manufacturer pn"
+	1    13550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 4150 12850 4150
+Wire Wire Line
+	12850 4150 12850 3550
+$Comp
+L power:+BATT #PWR0149
+U 1 1 5F0CEE86
+P 12850 3500
+F 0 "#PWR0149" H 12850 3350 50  0001 C CNN
+F 1 "+BATT" H 12865 3673 50  0000 C CNN
+F 2 "" H 12850 3500 50  0001 C CNN
+F 3 "" H 12850 3500 50  0001 C CNN
+	1    12850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 4550 12850 4550
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5F0D5B21
+P 12850 5050
+AR Path="/5F0D5B21" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5F0D5B21" Ref="#SUPPLY0117"  Part="1" 
+F 0 "#SUPPLY0117" H 12850 5050 50  0001 C CNN
+F 1 "GND" H 12775 4925 59  0000 L BNN
+F 2 "" H 12850 5050 50  0001 C CNN
+F 3 "" H 12850 5050 50  0001 C CNN
+	1    12850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 4150 14250 4150
+Wire Wire Line
+	14250 4150 14250 3650
+$Comp
+L power:+12V #PWR0164
+U 1 1 5F0DB7D8
+P 14250 3650
+F 0 "#PWR0164" H 14250 3500 50  0001 C CNN
+F 1 "+12V" H 14265 3823 50  0000 C CNN
+F 2 "" H 14250 3650 50  0001 C CNN
+F 3 "" H 14250 3650 50  0001 C CNN
+	1    14250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 4350 12850 4350
+Text GLabel 12850 4350 0    50   Input ~ 0
+12V_ENABLE
+$Comp
+L Device:C C25
+U 1 1 5F29FCEF
+P 14250 4400
+F 0 "C25" H 14365 4446 50  0000 L CNN
+F 1 "22u" H 14365 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 14288 4250 50  0001 C CNN
+F 3 "~" H 14250 4400 50  0001 C CNN
+F 4 "25V" H 14250 4400 50  0001 C CNN "Rating"
+	1    14250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 4800 14250 4800
+Wire Wire Line
+	14250 4800 14250 4550
+Wire Wire Line
+	12850 4550 12850 4800
+Connection ~ 12850 4800
+Wire Wire Line
+	12850 4800 12850 4950
+Wire Wire Line
+	14250 4250 14250 4150
+Connection ~ 14250 4150
+$Comp
+L Device:C C24
+U 1 1 5F2AF6BD
+P 12550 3800
+F 0 "C24" H 12665 3846 50  0000 L CNN
+F 1 "4.7u" H 12665 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 12588 3650 50  0001 C CNN
+F 3 "~" H 12550 3800 50  0001 C CNN
+F 4 "50V" H 12550 3800 50  0001 C CNN "Rating"
+	1    12550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 3650 12550 3550
+Wire Wire Line
+	12550 3550 12850 3550
+Connection ~ 12850 3550
+Wire Wire Line
+	12850 3550 12850 3500
+Wire Wire Line
+	12550 3950 12550 4000
+$Comp
+L floatController-legacy:GND #SUPPLY?
+U 1 1 5F2C2BFF
+P 12550 4100
+AR Path="/5F2C2BFF" Ref="#SUPPLY?"  Part="1" 
+AR Path="/5EB2DABF/5F2C2BFF" Ref="#SUPPLY0111"  Part="1" 
+F 0 "#SUPPLY0111" H 12550 4100 50  0001 C CNN
+F 1 "GND" H 12475 3975 59  0000 L BNN
+F 2 "" H 12550 4100 50  0001 C CNN
+F 3 "" H 12550 4100 50  0001 C CNN
+	1    12550 4100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
